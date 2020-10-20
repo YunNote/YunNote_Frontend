@@ -5,9 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+
+    "development:build":  "cross-env NODE_ENV=development next dev",
+    "staging:build": "cross-env NODE_ENV=staging next dev"
   },
   "dependencies": {
+    "axios": "^0.20.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "next": "^9.5.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
